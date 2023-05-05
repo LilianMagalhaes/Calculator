@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+    <head>
+        <title>Projet:Calculatrice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        <link rel="stylesheet" href="Calculator-CSS.css" type="text/css"/>
+        <script type="text/javascript" src="Calculator-App.js"></script>
+    </head>
+     
+    <body>
+        <section class="container"> <!--begin container section-->
+                <header> 
+                    <nav class="menu">
+                        <span id="sideDrawer_icone" onclick="openNav()">&#9776;</span>
+                        <h1>maCalculatrice</h1>
+                    </nav> 
+
+                    <aside id="mySideDrawer">
+                        <span class="date-time" id="time"></span>
+                        <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
+                        <iframe title="Météo Environnement Canada" width="287px" height="191px" margin="2px" 
+                                src="https://meteo.gc.ca/wxlink/wxlink.html?cityCode=qc-147&amp;lang=f" allowtransparency="true" frameborder="0"></iframe>
+                    </aside>
+                </header>
+                
+            <section class="calculator" > <!--begin calculator section-->
+            
+                <input class="input" id="output" value='' readonly></input> <!--display/output-->
+
+                <div class="buttons-container"> <!--begin buttons-->
+                    <button class="number calculatorInput" id="7" value='7'>7</button>
+                    <button class="number calculatorInput" id="8" value='8'>8</button>
+                    <button class="number calculatorInput" id="9" value='9' >9</button>
+                    <button class="operator calculatorInput" id="divide" value='/'>÷</button>
+                    
+                    <button class="number calculatorInput" id="4" value='4'>4</button>
+                    <button class="number calculatorInput" id="5" value='5'>5</button>
+                    <button class="number calculatorInput" id="6" value='6'>6</button>
+                    <button class="operator calculatorInput" id="times" value='*'>×</button>
+                
+                    <button class="number calculatorInput" id="1" value='1'>1</button>
+                    <button class="number calculatorInput" id="2" value='2'>2</button>
+                    <button class="number calculatorInput" id="3" value='3'>3</button>
+                    <button class="operator calculatorInput" id="minus" value='-'>−</button>
+                    
+                    <button class="number calculatorInput" id="0" value='0'>0</button>
+                    <button class="decimal calculatorInput" id="decimal" value='.'>,</button>
+                    <button class="operator equals calculatorInput" id="equals">=</button>
+                    <button class="operator calculatorInput" id="plus" value='+'>+</button>
+                </div>
+
+                <button href="javascript:void(0)" id="icone_slideUp" colspan="4" onclick="openFoot()">&#8963;</button><!--open upside drawer button-->
+
+            </section> <!--end calculator section-->
+        
+            <footer id="mySlideUpDrawer"> <!--begin slide up drawer section-->
+                
+                    <div class="closeFootbtn" href="javascript:void(0)" id="closeFootbtn" colspan="4" onclick="closeFoot()">&#8964;</div><!--close upside drawer button-->
+                    
+                    <section class="buttons-container-extra" >
+                        <button class="extra calculatorInput" id="openBracket" value='('>(</button>
+                        <button class="extra calculatorInput" id="closeBracket" value=')'>)</button>
+                        <button class="extra calculatorInput" id="clear" value="clear">C</button>
+                        <button class="extra calculatorInput" id="del" >&#8592;</button>
+                    </section>
+                    <small>Lilian Magalhaes - Decembre 2022.</small>
+                </footer>  <!--end slide up drawer section-->
+        </section><!--end container-->
+    </body>
+</html> 
